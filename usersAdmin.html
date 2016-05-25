@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Clinic sign in</title>
+    <link rel="stylesheet" href="./imgs/grid.css">
+    <script src="angular.js"></script>
+</head>
+<body ng-app="gridModu">
+    <div id="main">
+
+            <div ng-controller="gridCont" class="selectDiv">
+                <br>
+                <br>
+                <hr>
+                <br>
+
+                <div id="container" class="grid-container outline">
+                <div class="row">
+                    <div class="col-user"><input id="userId" type="text" ng-model="filtUser" placeholder="user id"><div class="arrow_up" ng-click="sortUserDesc()" ></div><div class="arrow_down" ng-click="sortUserAsce()"></div></div>
+                    <div class="col-2"><p class="lightBlue">Sid</p></div>
+                    <div class="col-1"><p class="lightBlue">Email</p></div>
+                </div>
+                <div id="repeat" class="row" ng-repeat="user in (filteredP = (users | gridFiltUser:this))">
+                    <div class="col-user"><p ng-bind="user.username"></p></div>
+                    <div class="col-2"><p ng-bind="user.sid"></p></div>
+                    <div class="col-1"><p ng-bind="user.email"></p></div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </div>
+    <div id="log_out"><span>Log out</span></div>
+    <script src="grid.js"></script>
+    <script src="common.js"></script>
+    <link rel="stylesheet" href="./common.css">
+</body>
+</html>

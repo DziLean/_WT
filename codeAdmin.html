@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="code">
+    <meta name="description" content="html code">
+    <title>Code here, dear</title>
+    <link rel="stylesheet" href="code.css"/>
+    <script src="angular.min.js"></script>
+    <script src="jquery.js"></script>
+    <script src="angular-sanitize.js"></script>
+</head>
+<body>
+<br>
+
+<br>
+<hr>
+<div id='main' ng-app="app" ng-controller="htmlController" >
+    <div class="col col-2">
+        <div id="save" class="buttons" style="margin-top:20px;">SAVE</div>
+        <div id="load" class="buttons">LOAD</div>
+        <div id="p" class="buttons">P</div>
+        <div id="div" class="buttons">DIV</div>
+        <div id="span" class="buttons">SPAN</div>
+    </div>
+    <div id="text">
+        <span class="head">TYPE HERE PLEASE</span>
+        <textarea  cols="46" rows="25" name="write" id="codearea" ng-model="codeareaIn"></textarea>
+    </div>
+    <div class="col col-3" id="iframe"  style="margin-top:20px;">Hi</div>
+</div>
+<div id="message">;)</div>
+<footer id="footer"></footer>
+<div id="log_out"><span>Log out</span></div>
+<div id="settings"><img id='set' src="settings.png"><span id="setS">Settings</span></div>
+<div id="admin"><img id='ad' src="user.png"><span id="adS">Users</span></div>
+<div id="userNow"><span></span></div>
+
+<div id="menu">
+    <label for="back">Background</label>
+    <input type="button" id="back" accept="image/gif, image/jpeg, image/png" value="Change bground"/>
+    <input type='file' id='verborgen_file' style="display: none" />
+
+</div>
+<input type="button" id="saveChanges"  value="Save changes"/>
+<script src="code.js"></script>
+<script src="common.js"></script>
+<link rel="stylesheet" href="./common.css">
+</body>
+</html>

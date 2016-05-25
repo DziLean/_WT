@@ -1,0 +1,68 @@
+
+#log_out{
+    width:70px;
+    height:30px;
+    border-radius:5px;
+    background-color: #d2d7de !important;
+    border:none;
+    position:absolute;
+    right:10px;
+    top:10px;
+    text-align :center;
+    vertical-align: middle;
+    cursor:pointer;
+    color:#54d433;
+}
+#log_out span{
+    color:#54d433;
+    display: inline-block;
+    width:70px;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+}
+#log_out:hover{
+    box-shadow: 0px 5px 10px 1px #000;
+}
+#settings {
+    cursor:pointer;
+    width:100px;
+    height:40px;
+    border-radius:5px;
+    background-color: transparent !important;
+    border:none;
+    position:absolute;
+    right:10px;
+    top:60px;
+    text-align :center;
+    vertical-align: middle;
+    cursor:pointer;
+    color:#54d433;
+}
+
+#set{
+    margin-top:5px;
+    display: inline-block;
+    position: relative;
+    width:30px;
+    height:30px;
+    animation: imgRotate 3s infinite;
+    animation-timing-function: cubic-bezier(0.25,0.25,0.75,0.75);
+}
+#setS{
+    display: inline-block;
+    position: relative;
+    left:30%;
+    transform: translate(-50%,0);
+}
+@keyframes imgRotate {
+    0%{
+       transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

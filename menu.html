@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Clinic sign in</title>
+    <script src="angular.js"></script>
+    <script src="jquery.js"></script>
+    <style>
+        body{
+            font-family:"PT Sans",Arial,serif;
+            background-image: url('');
+            background-size: cover;
+            background-repeat:no-repeat;
+            background-position: center;
+            background-attachment: scroll;
+            min-width: 800px;
+            min-height: 400px;
+        }
+        #menu{
+            background-image: url('');
+            background-size: contain;
+            background-repeat:no-repeat;
+            background-position: center;
+            background-attachment: scroll;
+            width:200px;
+            height:400px;
+            border:1px dashed #000;
+            position:absolute;
+            display: inline-block;
+            right:10px;
+            top:10px;
+            border-radius: 10px;
+        }
+        #back{
+            width:160px;
+            height:40px;
+            padding:5px;
+            margin:5px;
+            margin-left:0px;
+            margin-right:0px;
+            margin-top:0px;
+            border:1px dashed #000;
+            position:relative;
+            display: inline-block;
+            right:10px;
+            top:10px;
+            left: 50%;
+            transform: translate(-50%,0);
+        }
+        input{
+            border-radius: 10px;
+            cursor:pointer;
+            width:160px;
+            height:40px;
+            padding:5px;
+            margin:10px;
+            margin-left:0px;
+            margin-right:0px;
+            border:1px dashed #000;
+            position:relative;
+            display: inline-block;
+            left: 50%;
+            transform: translate(-50%,0);
+            background-color: rgba(255,255,255,0.6);
+        }
+    </style>
+
+</head>
+<body>
+<div id="menu">
+    <label for="back">Background</label>
+    <input type="button" id="back" accept="image/gif, image/jpeg, image/png" value="Change bground"/>
+    <input type='file' id='verborgen_file' />
+    <input type="button" id="saveChanges"  value="Save changes"/>
+</div>
+<script src="menu.js"></script>
+</body>
+</html>
