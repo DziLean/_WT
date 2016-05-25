@@ -1,3 +1,4 @@
+///Summary
 ///Server creation, signing in, signing out
 ///Summary
 //preparations
@@ -872,7 +873,7 @@ function reset(req,res){
                     port: 465,
                     auth : {
                         user : "gestaltldi@yandex.ru",
-                        pass : ""
+                        pass : "denisigordzilean"
                     }
                 }));
 
